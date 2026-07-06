@@ -1,102 +1,102 @@
 {
   "nav": {
     "overview": "Overview",
-    "handover": "Handover",
+    "handover": "Amenities",
     "gallery": "Gallery",
-    "contact": "Contact",
+    "contact": "Booking",
     "button": "Contact Now"
   },
   "hero": {
-    "title": "AURA ELITE RESIDENCE",
-    "subtitle": "Architectural Masterpiece - Pinnacle of Luxury Living",
-    "cta": "Request Brochure & Quotes"
+    "title": "AURA PREMIUM STUDIOS",
+    "subtitle": "Premium Rooms & Serviced Studios - Luxury Living In District 1",
+    "cta": "Book a Viewing Tour"
   },
   "overview": {
-    "title": "Discover Aura Elite",
-    "subtitle": "A new symbol of elite lifestyle in the heart of the financial district, where contemporary design meets supreme luxury.",
-    "location": "Prime Location",
-    "locationVal": "Sapphire Boulevard, District 1, HCMC",
-    "scale": "Project Scale",
-    "scaleVal": "2 Towers, 45 Floors, 320 Units",
-    "legal": "Clear Legal Status",
-    "legalVal": "Pink book with long-term ownership",
-    "greenSpace": "Green Density",
-    "greenSpaceVal": "60% Amenities & landscape area"
+    "title": "Aura Premium Experience",
+    "subtitle": "A new generation of premium rooms and serviced studios for rent in the financial district, where minimalist design meets modern conveniences.",
+    "location": "Central Location",
+    "locationVal": "Sapphire Boulevard, District 1, HCMC (Near Metro)",
+    "scale": "Portfolio Size",
+    "scaleVal": "2 Buildings, 45 Floors, 320 Serviced Studios",
+    "legal": "Lease Term",
+    "legalVal": "Flexible from 6 months to 12 months",
+    "greenSpace": "Services Included",
+    "greenSpaceVal": "Room cleaning 2x/week, Free Wifi & Pool Access"
   },
   "handover": {
-    "title": "Premium Handover Standards",
-    "subtitle": "Every interior detail is strictly curated from the leading heritage brands in Europe.",
+    "title": "Room Handover Amenities",
+    "subtitle": "Each room is fully equipped with premium smart furniture, optimizing space. Just bring your suitcase and move in.",
     "kitchen": {
-      "title": "Imperial Kitchen Area",
-      "desc": "Premium kitchen cabinets and home appliances by Miele (Germany) with scratch-resistant natural quartz countertops."
+      "title": "Convenient Kitchenette",
+      "desc": "Oak cabinets, premium Bosch induction hob, built-in smart fridge, and automatic cooker hood."
     },
     "smartHome": {
-      "title": "Comprehensive Smart Home",
-      "desc": "Schneider (France) smart home management system integrated with voice control, scenario lighting, and automatic curtains."
+      "title": "Smart Controls",
+      "desc": "Daikin smart central air conditioning, secure fingerprint & keycard lock, and electric motorized curtains."
     },
     "bathroom": {
-      "title": "5-Star Resort Bathroom",
-      "desc": "Fully equipped with gold-plated sanitary fittings by Gessi (Italy) and Duravit solid-cast porcelain bathtubs."
+      "title": "High-class Private Bathroom",
+      "desc": "Fully equipped with a standing glass shower stall, premium Toto chrome-plated fittings, and a Ferroli water heater."
     },
     "flooring": {
-      "title": "Imported Natural Hardwood",
-      "desc": "15mm thick North American Walnut flooring, treated for moisture resistance and ultra-luxury hotel standard soundproofing."
+      "title": "Sound-absorbing Hardwood",
+      "desc": "12mm water-resistant laminate flooring imported from Malaysia, effectively reducing noise transmission between floors."
     }
   },
   "gallery": {
-    "title": "Artistic Photo Gallery",
-    "subtitle": "Admire the captures of the artistic and high-class living spaces at Aura Elite."
+    "title": "Real Living Spaces",
+    "subtitle": "Explore real captures of our studios and shared upscale amenities at Aura Premium Studios."
   },
   "contact": {
-    "title": "Register for Consultation & Tour",
-    "subtitle": "Leave your details, and our senior consultancy team will reach out to you within 15 minutes.",
+    "title": "Register to Book a Room Viewing",
+    "subtitle": "Leave your contact details, and our Property Manager will call to assist you in selecting a room and scheduling a viewing.",
     "name": "Full Name",
     "phone": "Phone Number",
     "email": "Email Address",
-    "notes": "Special Requests (Optional)",
-    "submit": "Submit Request Now",
-    "success": "Information sent successfully! We will contact you shortly.",
+    "notes": "Special Requests (Move-in date, pet allowance...)",
+    "submit": "Schedule Viewing Now",
+    "success": "Registration successful! The Property Manager will contact you shortly to schedule a viewing.",
     "error": "Please double-check your input details."
   },
   "products": {
-    "title": "Model Apartment Portfolio",
-    "subtitle": "Select a refined living space tailored precisely to your family's lifestyle and status.",
-    "viewDetails": "View Details",
+    "title": "Available Rooms & Studios",
+    "subtitle": "Select a refined living space optimized for working professionals and young families.",
+    "viewDetails": "Details & 360° VR Tour",
     "backToHome": "Back to Home",
-    "registerInterest": "Register Interest for this Unit",
+    "registerInterest": "Inquire About this Room",
     "specs": {
-      "area": "Net / Gross Area",
-      "view": "Primary View",
-      "price": "Estimated Price",
-      "handover": "Handover Highlights"
+      "area": "Net Floor Area",
+      "view": "Window View",
+      "price": "Monthly Rent",
+      "handover": "Furnishing Included"
     },
-    "1-bedroom": {
-      "name": "Aura Suite 1-Bedroom",
-      "tagline": "The genesis of sophisticated modern living",
-      "viewVal": "Serene park landscape & resort swimming pool",
-      "priceVal": "From 5.5 Billion VND",
-      "handoverHighlight": "Miele kitchen setup (Germany), Hafele smart key system."
+    "cozy-studio": {
+      "name": "Cozy Studio",
+      "tagline": "Minimalist and neat for active modern lifestyles",
+      "viewVal": "Quiet inner courtyard with lush green trees",
+      "priceVal": "6.5 Million VND / Month",
+      "handoverHighlight": "Fully furnished bed, wardrobe, working desk, mini fridge, single induction hob."
     },
-    "2-bedroom": {
-      "name": "Aura Signature 2-Bedroom",
-      "tagline": "Cosy and elegant living space for elite families",
-      "viewVal": "Direct panoramic view of Saigon River & Yacht Marina",
-      "priceVal": "From 8.2 Billion VND",
-      "handoverHighlight": "Gessi bathroom fittings (Italy), Daikin centralized ducted AC."
+    "loft-suite": {
+      "name": "Loft Suite",
+      "tagline": "Smart loft design doubling your living area",
+      "viewVal": "Saigon financial district glittering night lights",
+      "priceVal": "8.5 Million VND / Month",
+      "handoverHighlight": "Living area with sofa downstairs, private sleeping loft upstairs, full-sized fridge."
     },
-    "penthouse": {
-      "name": "Aura Imperial Penthouse",
-      "tagline": "Declaration of status above the clouds",
-      "viewVal": "360-degree city center skyline and river scenery",
-      "priceVal": "Contact Directly",
-      "handoverHighlight": "Private infinity balcony pool, Triple Low-E sound/heat insulated glazing."
+    "executive-1br": {
+      "name": "Executive 1BR",
+      "tagline": "Fully functional 1-bedroom serviced apartment",
+      "viewVal": "Facing directly towards the poetic Saigon River",
+      "priceVal": "11.5 Million VND / Month",
+      "handoverHighlight": "Includes laundry service, weekly deep cleaning, modern L-shaped kitchen."
     },
-    "duplex": {
-      "name": "Aura Royal Duplex",
-      "tagline": "Prestigious double-volume sky villa",
-      "viewVal": "Radiant financial district avenues and Landmark 81",
-      "priceVal": "From 18 Billion VND",
-      "handoverHighlight": "Double-height 6.5m ceiling, natural Greek Marble flooring in living room."
+    "penthouse-studio": {
+      "name": "Penthouse Studio",
+      "tagline": "Spacious penthouse studio with a private rooftop garden",
+      "viewVal": "360-degree panoramic view overlooking the city skyline",
+      "priceVal": "18 Million VND / Month",
+      "handoverHighlight": "Private sunbathing deck on a large balcony, premium bathtub."
     }
   }
 }
