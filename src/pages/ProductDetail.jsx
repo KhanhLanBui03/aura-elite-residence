@@ -11,6 +11,8 @@ export default function ProductDetail() {
   
   const product = products.find((p) => p.id === id);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [activeTab, setActiveTab] = useState('floorplan');
+  const [iframeLoading, setIframeLoading] = useState(true);
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', notes: '' });
   const [errorMsg, setErrorMsg] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
@@ -90,8 +92,60 @@ export default function ProductDetail() {
           gap: '50px'
         }}>
           
-          {/* Left Column: Floorplan Image */}
+          {/* Left Column: Floorplan Image & 360 Virtual Tour Switchable Tabs */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            
+            {/* Tab selector */}
+            <div style={{ display: 'flex', gap: '16px', borderBottom: '1px solid var(--border-light)', paddingBottom: '10px' }}>
+              <button
+                onClick={() => setActiveTab('floorplan')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: activeTab === 'floorplan' ? 'var(--accent-color)' : 'var(--text-muted-light)',
+                  fontWeight: activeTab === 'floorplan' ? '600' : '400',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  padding: '8px 12px',
+                  position: 'relative'
+                }}
+              >
+                <span>Mặt bằng 2D</span>
+                {activeTab === 'floorplan' && (
+                  <motion.div 
+                    layoutId="activeTabUnderline"
+                    style={{ position: 'absolute', bottom: '-11px', left: 0, right: 0, height: '2px', backgroundColor: 'var(--accent-color)' }}
+                  />
+                )}
+              </button>
+
+              <button
+                onClick={() => {
+                  setActiveTab('360');
+                  setIframeLoading(true);
+                }}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: activeTab === '360' ? 'var(--accent-color)' : 'var(--text-muted-light)',
+                  fontWeight: activeTab === '360' ? '600' : '400',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  padding: '8px 12px',
+                  position: 'relative'
+                }}
+              >
+                <span>Tham quan 360°</span>
+                {activeTab === '360' && (
+                  <motion.div 
+                    layoutId="activeTabUnderline"
+                    style={{ position: 'absolute', bottom: '-11px', left: 0, right: 0, height: '2px', backgroundColor: 'var(--accent-color)' }}
+                  />
+                )}
+              </button>
+            </div>
+
+            {/* Content Container */}
             <div 
               style={{
                 position: 'relative',
@@ -99,34 +153,75 @@ export default function ProductDetail() {
                 overflow: 'hidden',
                 backgroundColor: 'rgba(255, 255, 255, 0.02)',
                 border: '1px solid var(--border-light)',
-                aspectRatio: '16/11',
-                cursor: 'zoom-in'
+                aspectRatio: '16/11'
               }}
-              onClick={() => setIsZoomed(true)}
             >
-              <img 
-                src={product.image} 
-                alt={t(`products.${product.id}.name`)} 
-                style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
-              />
-              <div style={{
-                position: 'absolute',
-                bottom: '16px',
-                right: '16px',
-                backgroundColor: 'rgba(11, 12, 16, 0.8)',
-                borderRadius: '50%',
-                padding: '10px',
-                color: 'var(--accent-color)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: '1px solid var(--border-light)'
-              }}>
-                <ZoomIn size={18} />
-              </div>
+              {activeTab === 'floorplan' ? (
+                <div 
+                  style={{ width: '100%', height: '100%', cursor: 'zoom-in', position: 'relative' }}
+                  onClick={() => setIsZoomed(true)}
+                >
+                  <img 
+                    src={product.image} 
+                    alt={t(`products.${product.id}.name`)} 
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '16px',
+                    right: '16px',
+                    backgroundColor: 'rgba(11, 12, 16, 0.8)',
+                    borderRadius: '50%',
+                    padding: '10px',
+                    color: 'var(--accent-color)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '1px solid var(--border-light)'
+                  }}>
+                    <ZoomIn size={18} />
+                  </div>
+                </div>
+              ) : (
+                <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+                  {/* Loading Spinner for 360 tour */}
+                  {iframeLoading && (
+                    <div style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      backgroundColor: 'var(--primary-color)',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      zIndex: 5
+                    }}>
+                      <div className="spinner" />
+                    </div>
+                  )}
+                  <iframe
+                    src={product.virtual360Url}
+                    title="Virtual Tour 360"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="xr-spatial-tracking"
+                    sandbox="allow-scripts allow-same-origin"
+                    onLoad={() => setIframeLoading(false)}
+                    style={{ display: 'block', width: '100%', height: '100%' }}
+                  />
+                </div>
+              )}
             </div>
+
+            {/* Helper Text */}
             <p style={{ textAlign: 'center', fontSize: '13px', color: 'var(--text-muted-light)', fontStyle: 'italic' }}>
-              * Click vào hình ảnh để xem mặt bằng phóng to chi tiết
+              {activeTab === 'floorplan' 
+                ? '* Click vào hình ảnh để xem mặt bằng phóng to chi tiết' 
+                : '* Giữ và kéo chuột trên khung hình để quay 360 độ hoặc click chọn các điểm di chuyển'}
             </p>
           </div>
 
