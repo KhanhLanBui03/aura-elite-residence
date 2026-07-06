@@ -36,12 +36,12 @@ export default function Footer() {
             opacity: 0.8,
             marginTop: '-2px'
           }}>
-            ELITE RESIDENCE
+            PREMIUM STUDIOS
           </span>
         </div>
 
         <p style={{ fontWeight: '300', opacity: 0.8 }}>
-          © {new Date().getFullYear()} Aura Elite Residence. All rights reserved.
+          © {new Date().getFullYear()} Aura Premium Studios. All rights reserved.
         </p>
         <p style={{ fontSize: '11px', fontWeight: '300', opacity: 0.6, maxWidth: '600px', lineHeight: '1.5' }}>
           Thông tin, hình ảnh hiển thị trên trang web này mang tính chất tham khảo minh họa và không phải là thông tin cam kết pháp lý chính thức của dự án.

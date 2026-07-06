@@ -1,11 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Maximize } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { products } from '../data/products';
 
-export default function ProductList() {
+export default function ProductList({ onSelectRoom }) {
   const { t } = useTranslation();
 
   const containerVariants = {
@@ -24,9 +23,16 @@ export default function ProductList() {
     }
   };
 
+  const handleRentClick = (e, roomId) => {
+    e.preventDefault();
+    if (onSelectRoom) {
+      onSelectRoom(roomId);
+    }
+  };
+
   return (
     <section id="products" className="section-padding" style={{ backgroundColor: 'var(--primary-color)' }}>
-      <div className="container">
+      <div className="container" style={{ perspective: '1000px' }}>
         
         {/* Title */}
         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
@@ -74,7 +80,13 @@ export default function ProductList() {
             <motion.div
               key={product.id}
               variants={cardVariants}
-              whileHover={{ y: -8, boxShadow: 'var(--shadow-luxury)' }}
+              whileHover={{ 
+                y: -10, 
+                rotateX: 4, 
+                rotateY: -4, 
+                boxShadow: 'var(--shadow-luxury)',
+                transition: { duration: 0.3 }
+              }}
               style={{
                 backgroundColor: 'var(--secondary-color)',
                 border: '1px solid var(--border-light)',
@@ -82,6 +94,7 @@ export default function ProductList() {
                 overflow: 'hidden',
                 display: 'flex',
                 flexDirection: 'column',
+                transformStyle: 'preserve-3d',
                 transition: 'box-shadow 0.3s ease'
               }}
             >
@@ -104,12 +117,12 @@ export default function ProductList() {
                   color: 'var(--accent-color)',
                   fontWeight: '600'
                 }}>
-                  {product.areaNet} (Net)
+                  {product.areaNet}
                 </div>
               </div>
 
               {/* Product Text details */}
-              <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', gap: '16px', flexGrow: 1 }}>
+              <div style={{ padding: '30px', display: 'flex', flexDirection: 'column', gap: '16px', flexGrow: 1, transform: 'translateZ(20px)' }}>
                 <div>
                   <h3 style={{ fontSize: '20px', fontFamily: 'var(--font-serif)', color: '#ffffff', marginBottom: '8px' }}>
                     {t(`products.${product.id}.name`)}
@@ -134,22 +147,26 @@ export default function ProductList() {
                   </div>
                 </div>
 
-                {/* Link to detail */}
+                {/* Call-to-action button */}
                 <div style={{ marginTop: 'auto', paddingTop: '20px' }}>
-                  <Link 
-                    to={`/product/${product.id}`} 
+                  <button 
+                    onClick={(e) => handleRentClick(e, product.id)}
                     className="btn-gold" 
                     style={{ 
                       width: '100%', 
                       justifyContent: 'center', 
                       padding: '12px 20px', 
                       fontSize: '12px',
-                      textDecoration: 'none'
+                      cursor: 'pointer',
+                      border: 'none',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px'
                     }}
                   >
-                    <span>{t('products.viewDetails')}</span>
+                    <span>Đăng Ký Thuê Ngay</span>
                     <ArrowRight size={14} />
-                  </Link>
+                  </button>
                 </div>
               </div>
             </motion.div>

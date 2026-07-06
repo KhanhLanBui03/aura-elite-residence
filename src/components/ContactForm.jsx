@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Phone, MessageCircle, CheckCircle, AlertTriangle } from 'lucide-react';
 
-export default function ContactForm() {
+export default function ContactForm({ selectedRoom }) {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', notes: '' });
   const [errorMsg, setErrorMsg] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (selectedRoom) {
+      const roomName = t(`products.${selectedRoom}.name`);
+      setFormData((prev) => ({
+        ...prev,
+        notes: `Tôi muốn đăng ký tư vấn xem thực tế căn: ${roomName}`
+      }));
+    }
+  }, [selectedRoom, t]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

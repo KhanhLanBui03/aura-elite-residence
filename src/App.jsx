@@ -1,30 +1,41 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import Header from './components/Header';
+import Hero from './components/Hero';
+import ProjectOverview from './components/ProjectOverview';
+import HandoverSpec from './components/HandoverSpec';
+import ProductList from './components/ProductList';
+import VirtualTour3D from './components/VirtualTour3D';
+import Gallery from './components/Gallery';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import ProductDetail from './pages/ProductDetail';
-import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+  const [selectedRoom, setSelectedRoom] = useState('');
+
+  const handleSelectRoom = (roomId) => {
+    setSelectedRoom(roomId);
+    
+    // Smooth scroll to contact form section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <BrowserRouter>
-      <ScrollToTop />
+    <div style={{ backgroundColor: 'var(--primary-color)', minHeight: '100vh', overflowX: 'hidden' }}>
       <Header />
       <main style={{ marginTop: 0 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product/:id" element={<ProductDetail />} />
-          <Route path="*" element={
-            <div style={{ padding: '160px 24px 100px', textAlign: 'center', backgroundColor: 'var(--primary-color)' }}>
-              <h2 style={{ fontSize: '32px', color: 'var(--accent-color)', marginBottom: '16px' }}>404 - Không Tìm Thấy Trang</h2>
-              <a href="/" className="btn-gold">Quay lại trang chủ</a>
-            </div>
-          } />
-        </Routes>
+        <Hero />
+        <ProjectOverview />
+        <HandoverSpec />
+        <ProductList onSelectRoom={handleSelectRoom} />
+        <VirtualTour3D />
+        <Gallery />
+        <ContactForm selectedRoom={selectedRoom} />
       </main>
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 }
 

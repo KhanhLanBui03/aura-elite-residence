@@ -66,7 +66,7 @@ export default function Header() {
             opacity: 0.8,
             marginTop: '-2px'
           }}>
-            ELITE RESIDENCE
+            PREMIUM STUDIOS
           </span>
         </a>
 
