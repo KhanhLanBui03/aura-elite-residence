@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "overview": "Tổng quan",
+    "handover": "Bàn giao",
+    "gallery": "Thư viện",
+    "contact": "Liên hệ",
+    "button": "Liên hệ ngay"
+  },
+  "hero": {
+    "title": "AURA ELITE RESIDENCE",
+    "subtitle": "Kiệt Tác Kiến Trúc - Đỉnh Cao Sống Sang",
+    "cta": "Đăng ký nhận báo giá"
+  },
+  "overview": {
+    "title": "Khám Phá Aura Elite",
+    "subtitle": "Một biểu tượng sống thượng lưu mới tại trung tâm tài chính, nơi thiết kế đương đại giao thoa cùng chuẩn mực sống xa hoa.",
+    "location": "Vị Trí Độc Tôn",
+    "locationVal": "Đại lộ Sapphire, Quận 1, TP. HCM",
+    "scale": "Quy Mô Dự Án",
+    "scaleVal": "2 Tòa Tháp, 45 Tầng, 320 Căn Hộ",
+    "legal": "Pháp Lý Minh Bạch",
+    "legalVal": "Sổ hồng sở hữu lâu dài",
+    "greenSpace": "Mật Độ Xanh",
+    "greenSpaceVal": "60% Diện tích tiện ích & cảnh quan"
+  },
+  "handover": {
+    "title": "Danh Mục Bàn Giao Cao Cấp",
+    "subtitle": "Từng chi tiết nội thất được tuyển chọn khắt khe từ những thương hiệu di sản hàng đầu châu Âu.",
+    "kitchen": {
+      "title": "Không Gian Bếp Hoàng Gia",
+      "desc": "Tủ bếp và thiết bị gia dụng cao cấp thương hiệu Miele (Đức) cùng mặt đá thạch anh tự nhiên chống trầy xước."
+    },
+    "smartHome": {
+      "title": "Hệ Thống Smart Home Toàn Diện",
+      "desc": "Hệ thống quản lý căn hộ thông minh Schneider (Pháp) tích hợp điều khiển giọng nói, ánh sáng kịch bản và rèm tự động."
+    },
+    "bathroom": {
+      "title": "Phòng Tắm Chuẩn Resort 5 Sao",
+      "desc": "Trang bị trọn bộ thiết bị vệ sinh mạ vàng Gessi (Ý) và bồn tắm sứ đúc nguyên khối Duravit."
+    },
+    "flooring": {
+      "title": "Sàn Gỗ Tự Nhiên Nhập Khẩu",
+      "desc": "Sàn gỗ Walnut nhập khẩu Bắc Mỹ dày 15mm, xử lý chống ẩm và cách âm tiêu chuẩn khách sạn siêu sang."
+    }
+  },
+  "gallery": {
+    "title": "Thư Viện Ảnh Nghệ Thuật",
+    "subtitle": "Chiêm ngưỡng những góc máy ghi lại không gian sống đẳng cấp đầy nghệ thuật tại Aura Elite."
+  },
+  "contact": {
+    "title": "Đăng Ký Tư Vấn & Tham Quan Nhà Mẫu",
+    "subtitle": "Để lại thông tin, đội ngũ chuyên viên tư vấn cao cấp của chúng tôi sẽ liên hệ trong vòng 15 phút.",
+    "name": "Họ và tên",
+    "phone": "Số điện thoại",
+    "email": "Địa chỉ Email",
+    "notes": "Yêu cầu đặc biệt (nếu có)",
+    "submit": "Gửi yêu cầu ngay",
+    "success": "Gửi thông tin thành công! Chúng tôi sẽ liên hệ sớm nhất.",
+    "error": "Vui lòng kiểm tra lại thông tin."
+  },
+  "products": {
+    "title": "Bộ Sưu Tập Căn Hộ Mẫu",
+    "subtitle": "Lựa chọn không gian sống tinh tế được may đo riêng cho từng nhu cầu và vị thế của chủ nhân.",
+    "viewDetails": "Xem chi tiết",
+    "backToHome": "Quay lại trang chủ",
+    "registerInterest": "Đăng ký tư vấn riêng cho căn này",
+    "specs": {
+      "area": "Diện tích",
+      "view": "Tầm nhìn chính",
+      "price": "Giá bán dự kiến",
+      "handover": "Điểm nhấn bàn giao"
+    },
+    "1-bedroom": {
+      "name": "Aura Suite 1 Phòng Ngủ",
+      "tagline": "Khởi nguồn của phong cách sống tinh tế",
+      "viewVal": "Nội khu công viên tĩnh lặng & hồ bơi resort",
+      "priceVal": "Từ 5.5 Tỷ VNĐ",
+      "handoverHighlight": "Hệ bếp thương hiệu Miele (Đức), khóa từ thông minh Hafele."
+    },
+    "2-bedroom": {
+      "name": "Aura Signature 2 Phòng Ngủ",
+      "tagline": "Không gian sống ấm cúng của gia đình thượng lưu",
+      "viewVal": "Toàn cảnh trực diện Sông Sài Gòn & Bến du thuyền",
+      "priceVal": "Từ 8.2 Tỷ VNĐ",
+      "handoverHighlight": "Thiết bị vệ sinh Gessi (Ý), máy lạnh trung tâm âm trần Daikin."
+    },
+    "penthouse": {
+      "name": "Aura Imperial Penthouse",
+      "tagline": "Tuyên ngôn vị thế độc bản giữa lưng chừng mây",
+      "viewVal": "Toàn cảnh Skyline trung tâm thành phố 360 độ",
+      "priceVal": "Liên hệ trực tiếp",
+      "handoverHighlight": "Hồ bơi vô cực riêng tại ban công, kính cách âm cách nhiệt Triple Low-E."
+    },
+    "duplex": {
+      "name": "Aura Royal Duplex",
+      "tagline": "Dinh thự thông tầng trên không đẳng cấp",
+      "viewVal": "Đại lộ tài chính rực rỡ và tòa tháp Landmark 81",
+      "priceVal": "Từ 18 Tỷ VNĐ",
+      "handoverHighlight": "Chiều cao trần thông tầng 6.5m, sàn phòng khách lát đá Marble Hy Lạp tự nhiên."
+    }
+  }
+}

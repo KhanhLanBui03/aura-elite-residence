@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "handover": "Handover",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "button": "Contact Now"
+  },
+  "hero": {
+    "title": "AURA ELITE RESIDENCE",
+    "subtitle": "Architectural Masterpiece - Pinnacle of Luxury Living",
+    "cta": "Request Brochure & Quotes"
+  },
+  "overview": {
+    "title": "Discover Aura Elite",
+    "subtitle": "A new symbol of elite lifestyle in the heart of the financial district, where contemporary design meets supreme luxury.",
+    "location": "Prime Location",
+    "locationVal": "Sapphire Boulevard, District 1, HCMC",
+    "scale": "Project Scale",
+    "scaleVal": "2 Towers, 45 Floors, 320 Units",
+    "legal": "Clear Legal Status",
+    "legalVal": "Pink book with long-term ownership",
+    "greenSpace": "Green Density",
+    "greenSpaceVal": "60% Amenities & landscape area"
+  },
+  "handover": {
+    "title": "Premium Handover Standards",
+    "subtitle": "Every interior detail is strictly curated from the leading heritage brands in Europe.",
+    "kitchen": {
+      "title": "Imperial Kitchen Area",
+      "desc": "Premium kitchen cabinets and home appliances by Miele (Germany) with scratch-resistant natural quartz countertops."
+    },
+    "smartHome": {
+      "title": "Comprehensive Smart Home",
+      "desc": "Schneider (France) smart home management system integrated with voice control, scenario lighting, and automatic curtains."
+    },
+    "bathroom": {
+      "title": "5-Star Resort Bathroom",
+      "desc": "Fully equipped with gold-plated sanitary fittings by Gessi (Italy) and Duravit solid-cast porcelain bathtubs."
+    },
+    "flooring": {
+      "title": "Imported Natural Hardwood",
+      "desc": "15mm thick North American Walnut flooring, treated for moisture resistance and ultra-luxury hotel standard soundproofing."
+    }
+  },
+  "gallery": {
+    "title": "Artistic Photo Gallery",
+    "subtitle": "Admire the captures of the artistic and high-class living spaces at Aura Elite."
+  },
+  "contact": {
+    "title": "Register for Consultation & Tour",
+    "subtitle": "Leave your details, and our senior consultancy team will reach out to you within 15 minutes.",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "notes": "Special Requests (Optional)",
+    "submit": "Submit Request Now",
+    "success": "Information sent successfully! We will contact you shortly.",
+    "error": "Please double-check your input details."
+  },
+  "products": {
+    "title": "Model Apartment Portfolio",
+    "subtitle": "Select a refined living space tailored precisely to your family's lifestyle and status.",
+    "viewDetails": "View Details",
+    "backToHome": "Back to Home",
+    "registerInterest": "Register Interest for this Unit",
+    "specs": {
+      "area": "Net / Gross Area",
+      "view": "Primary View",
+      "price": "Estimated Price",
+      "handover": "Handover Highlights"
+    },
+    "1-bedroom": {
+      "name": "Aura Suite 1-Bedroom",
+      "tagline": "The genesis of sophisticated modern living",
+      "viewVal": "Serene park landscape & resort swimming pool",
+      "priceVal": "From 5.5 Billion VND",
+      "handoverHighlight": "Miele kitchen setup (Germany), Hafele smart key system."
+    },
+    "2-bedroom": {
+      "name": "Aura Signature 2-Bedroom",
+      "tagline": "Cosy and elegant living space for elite families",
+      "viewVal": "Direct panoramic view of Saigon River & Yacht Marina",
+      "priceVal": "From 8.2 Billion VND",
+      "handoverHighlight": "Gessi bathroom fittings (Italy), Daikin centralized ducted AC."
+    },
+    "penthouse": {
+      "name": "Aura Imperial Penthouse",
+      "tagline": "Declaration of status above the clouds",
+      "viewVal": "360-degree city center skyline and river scenery",
+      "priceVal": "Contact Directly",
+      "handoverHighlight": "Private infinity balcony pool, Triple Low-E sound/heat insulated glazing."
+    },
+    "duplex": {
+      "name": "Aura Royal Duplex",
+      "tagline": "Prestigious double-volume sky villa",
+      "viewVal": "Radiant financial district avenues and Landmark 81",
+      "priceVal": "From 18 Billion VND",
+      "handoverHighlight": "Double-height 6.5m ceiling, natural Greek Marble flooring in living room."
+    }
+  }
+}
